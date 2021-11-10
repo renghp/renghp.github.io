@@ -337,3 +337,17 @@ wilcox.test(pOBVI$totalDistance, pOSIGHTED$totalDistance)
 wilcox.test(pOBVI$timeTaken, pOSIGHTED$timeTaken)
 wilcox.test(pOBVI$Xdist, pOSIGHTED$Xdist)
 wilcox.test(pOBVI$Ydist, pOSIGHTED$Ydist)
+
+h250 <- read.csv("C:/Users/renan/hand-mouse-sonification/R analysis/spatialHarmonicsTwoD50+.csv",nrows=50)
+
+h225<- read.csv("C:/Users/renan/hand-mouse-sonification/R analysis/spatialHarmonicsTwoD25-.csv",nrows=50)
+
+h235<- read.csv("C:/Users/renan/hand-mouse-sonification/R analysis/spatialHarmonicsTwoD35.csv",nrows=70)
+
+wilcox.test(h250$totalDistance, h225$totalDistance)
+wilcox.test(h250$totalDistance, h235$totalDistance)
+wilcox.test(h235$totalDistance, h225$totalDistance)
+
+wilcox.test(h250$timeTaken, h225$timeTaken)
+wilcox.test(h250$Xdist, h225$Xdist)
+wilcox.test(h250$Ydist, h225$Ydist)
