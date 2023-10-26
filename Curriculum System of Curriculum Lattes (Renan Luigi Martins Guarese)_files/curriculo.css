@@ -16,6 +16,14 @@ DISPLAY: block; PADDING-LEFT: 15px;  PADDING-BOTTOM: 15px;
 width:100%
 }
 
+.row 
+{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
 
 .IndiceTabelaLinks
 {border:0; text-align:left; cellpadding:0; cols:6; width:80%;PADDING-RIGHT: 10px; 
